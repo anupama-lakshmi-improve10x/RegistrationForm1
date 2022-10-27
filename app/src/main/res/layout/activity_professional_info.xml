@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="40dp"
+    android:padding="20dp"
     tools:context=".ProfessionalInfoActivity">
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="25dp"
         android:gravity="center"
         android:text="PROFESSIONAL INFO"
-        android:textColor="#131212"
-        android:textSize="20sp" />
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView9"
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="Current Company"
-        android:textColor="#0C0B0B"
+        android:textColor="#0E0D0D"
         android:textSize="16sp" />
 
     <EditText
@@ -41,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="Total Experience"
-        android:textColor="#0B0909"
+        android:textColor="#0E0D0D"
         android:textSize="16sp" />
 
     <EditText
@@ -58,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="Designation"
-        android:textColor="#121010"
+        android:textColor="#0E0D0D"
         android:textSize="16sp" />
 
     <EditText
@@ -78,14 +79,14 @@
             android:id="@+id/back_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#534F4F"
+            android:backgroundTint="#B1B0B0"
             android:text="back" />
 
         <Button
             android:id="@+id/done_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
-            android:text="done" />
+            android:layout_marginLeft="180dp"
+            android:text="Next" />
     </LinearLayout>
 </LinearLayout>

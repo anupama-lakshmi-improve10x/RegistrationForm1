@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="40dp"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="25dp"
         android:gravity="center"
         android:text="SIGNUP INFO"
         android:textColor="#0C0C0C"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView2"
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="Email Address"
-        android:textColor="#0E0E0E"
+        android:textColor="#0E0D0D"
         android:textSize="16sp" />
 
     <EditText
@@ -39,8 +40,9 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:text="Password"
-        android:textColor="#100F0F"
+        android:textColor="#0E0D0D"
         android:textSize="16sp" />
 
     <EditText
@@ -57,7 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="Confirm Password"
-        android:textColor="#040303"
+        android:textColor="#0E0D0D"
         android:textSize="16sp" />
 
     <EditText
@@ -72,7 +74,7 @@
         android:id="@+id/next_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
+        android:layout_marginLeft="260dp"
         android:text="Next" />
 
 </LinearLayout>

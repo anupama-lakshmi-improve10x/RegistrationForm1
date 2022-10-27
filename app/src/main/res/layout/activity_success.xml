@@ -6,18 +6,19 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     android:orientation="vertical"
-    android:padding="40dp"
+    android:padding="20dp"
     tools:context=".SuccessActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="85dp"
-            android:layout_height="64dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             app:srcCompat="@android:drawable/checkbox_on_background" />
 
         <TextView
@@ -25,9 +26,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="You have Sucessfully Completed the Process "
+            android:text="You have sucessfully completed the process "
             android:textColor="#151414"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -140,7 +141,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="HNo/Appartment"
+                android:text="HNo/Apartment"
                 android:textColor="#0E0E0E"
                 android:textSize="16sp" />
 

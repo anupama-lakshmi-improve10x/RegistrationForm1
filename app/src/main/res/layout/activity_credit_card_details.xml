@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="40dp"
+    android:padding="20dp"
     tools:context=".CreditCardDetailsActivity">
 
     <TextView
         android:id="@+id/textView46"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="25dp"
         android:gravity="center"
-        android:text="Cerdit Card Details"
-        android:textColor="#151313"
-        android:textSize="16sp" />
+        android:text="CERDIT CARD DETAILS"
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView48"
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="Card Number"
-        android:textColor="#171717"
+        android:textColor="#0E0D0D"
         android:textSize="16sp" />
 
     <EditText
@@ -43,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="Card Holder"
-        android:textColor="#0C0B0B"
+        android:textColor="#0E0D0D"
         android:textSize="16sp" />
 
     <EditText
@@ -68,16 +69,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Expiry"
-            android:textColor="#151313"
+            android:textColor="#0E0D0D"
             android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView57"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_weight="1"
             android:text="CVV"
-            android:textColor="#1E1C1C" />
+            android:textColor="#0E0D0D" />
     </LinearLayout>
 
     <LinearLayout
@@ -100,6 +102,7 @@
             android:id="@+id/cvv_txt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
@@ -117,14 +120,14 @@
             android:id="@+id/ccback_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#686666"
+            android:backgroundTint="#B1B0B0"
             android:text="back" />
 
         <Button
             android:id="@+id/ccnext_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="180dp"
             android:text="Next" />
     </LinearLayout>
 

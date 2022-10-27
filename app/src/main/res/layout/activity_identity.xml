@@ -5,18 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="40dp"
+    android:padding="20dp"
     tools:context=".IdentityActivity">
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="25dp"
         android:gravity="center"
         android:text="IDENTITY"
-        android:textColor="#151414"
-        android:textSize="24sp" />
+        android:textColor="#0C0C0C"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView33"
@@ -24,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="PAN Number"
-        android:textColor="#1E1B1B"
+        android:textColor="#0E0D0D"
         android:textSize="16sp" />
 
     <EditText
@@ -41,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:text="Aadhar Number"
-        android:textColor="#171616"
+        android:textColor="#0E0D0D"
         android:textSize="16sp" />
 
     <EditText
@@ -61,14 +62,14 @@
             android:id="@+id/identityback_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#938F8F"
+            android:backgroundTint="#B1B0B0"
             android:text="back" />
 
         <Button
             android:id="@+id/identitynext_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="180dp"
             android:text="Next" />
     </LinearLayout>
 </LinearLayout>
