@@ -14,13 +14,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("Sign Up Info");
         Button button = findViewById(R.id.next_btn);
         button.setOnClickListener(view -> {
-            EditText emailAddressTxt = findViewById(R.id.emailaddress_txt);
+            EditText emailAddressTxt = findViewById(R.id.email_address_txt);
             String emailAddress = emailAddressTxt.getText().toString();
             EditText passwordTxt = findViewById(R.id.password_txt);
             String password = passwordTxt.getText().toString();
-            EditText confirmPasswordTxt = findViewById(R.id.confirmpassword_txt);
+            EditText confirmPasswordTxt = findViewById(R.id.confirm_password_txt);
             String confirmPassword = confirmPasswordTxt.getText().toString();
             Toast.makeText(this, emailAddress + "\t" + password + "\t" + confirmPassword, Toast.LENGTH_SHORT).show();
             // 3 components using put

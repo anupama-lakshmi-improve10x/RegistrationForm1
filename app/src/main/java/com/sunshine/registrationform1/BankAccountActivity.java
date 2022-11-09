@@ -13,6 +13,7 @@ public class BankAccountActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bank_account);
+        getSupportActionBar().setTitle("Bank Account");
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
         //String email = intent.getStringExtra("emailAddress");
@@ -26,15 +27,15 @@ public class BankAccountActivity extends AppCompatActivity {
         //String currentCompany = intent.getStringExtra("currentCompany");
         //String totalExp = intent.getStringExtra("totalExp");
         //String designation = intent.getStringExtra("designation");
-        Button nextBtn = findViewById(R.id.nextbtn_btn);
+        Button nextBtn = findViewById(R.id.next_btn);
         nextBtn.setOnClickListener(view -> {
-            EditText bankNameTxt = findViewById(R.id.bankname_txt);
+            EditText bankNameTxt = findViewById(R.id.bank_name_txt);
             String bankName = bankNameTxt.getText().toString();
-            EditText accountHolderNameTxt = findViewById(R.id.accountname_txt);
+            EditText accountHolderNameTxt = findViewById(R.id.account_holder_name_txt);
             String accountHolderName = accountHolderNameTxt.getText().toString();
-            EditText accountNumberTxt = findViewById(R.id.accountnumber_txt);
+            EditText accountNumberTxt = findViewById(R.id.account_number_txt);
             String accountNumber = accountNumberTxt.getText().toString();
-            EditText ifscCodeTxt = findViewById(R.id.ifsccode_txt);
+            EditText ifscCodeTxt = findViewById(R.id.ifsc_code_txt);
             String ifscCode = ifscCodeTxt.getText().toString();
             Intent bankAccountIntent = new Intent(this, CreditCardDetailsActivity.class);
             bankAccountIntent.putExtras(bundle);
@@ -56,7 +57,7 @@ public class BankAccountActivity extends AppCompatActivity {
             startActivity(bankAccountIntent);
         });
 
-        Button backBtn = findViewById(R.id.backbtn_btn);
+        Button backBtn = findViewById(R.id.back_btn);
         backBtn.setOnClickListener(view -> {
             finish();
         });

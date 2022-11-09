@@ -13,12 +13,13 @@ public class AddressActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_address);
+        getSupportActionBar().setTitle("Address");
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
 
-        Button addressNextBtn = findViewById(R.id.addressnext_btn);
+        Button addressNextBtn = findViewById(R.id.next_btn);
         addressNextBtn.setOnClickListener(view -> {
-            EditText hNoTxt = findViewById(R.id.hno_txt);
+            EditText hNoTxt = findViewById(R.id.h_no_txt);
             String houseNo = hNoTxt.getText().toString();
             EditText streetTxt = findViewById(R.id.street_txt);
             String street = streetTxt.getText().toString();
@@ -39,7 +40,7 @@ public class AddressActivity extends AppCompatActivity {
             startActivity(addressIntent);
         });
 
-        Button addressBackBtn = findViewById(R.id.addressback_btn);
+        Button addressBackBtn = findViewById(R.id.back_btn);
         addressBackBtn.setOnClickListener(view -> {
             finish();
         });

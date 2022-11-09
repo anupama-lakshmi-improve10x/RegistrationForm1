@@ -13,6 +13,7 @@ public class BirthDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_birth_details);
+        getSupportActionBar().setTitle("Birth Details");
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
        // String email = intent.getStringExtra("emailAddress");
@@ -21,11 +22,11 @@ public class BirthDetailsActivity extends AppCompatActivity {
         //String userName = intent.getStringExtra("userName");
         //String firstName = intent.getStringExtra("firstName");
         //String lastName = intent.getStringExtra("lastName");
-        Button nxtBtn = findViewById(R.id.nxt_btn);
+        Button nxtBtn = findViewById(R.id.next_btn);
         nxtBtn.setOnClickListener(view -> {
-            EditText dobTxt = findViewById(R.id.date_birth_txt);
+            EditText dobTxt = findViewById(R.id.date_of_birth_txt);
             String dob = dobTxt.getText().toString();
-            EditText pobTxt = findViewById(R.id.place_birth_txt);
+            EditText pobTxt = findViewById(R.id.place_of_birth_txt);
             String pob = pobTxt.getText().toString();
             Intent dateOfBirthIntent = new Intent(this, ProfessionalInfoActivity.class);
             dateOfBirthIntent.putExtras(bundle);
@@ -40,7 +41,7 @@ public class BirthDetailsActivity extends AppCompatActivity {
             startActivity(dateOfBirthIntent);
         });
 
-        Button bckBtn = findViewById(R.id.bck_btn);
+        Button bckBtn = findViewById(R.id.back_btn);
         bckBtn.setOnClickListener(view -> {
            finish();
         });

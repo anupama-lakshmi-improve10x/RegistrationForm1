@@ -14,6 +14,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_info);
+        getSupportActionBar().setTitle("Personal Info");
         Intent intent = getIntent();
         //Instead of calling getStringExtras from before screen we are using Bundle
         Bundle bundle = intent.getExtras();
@@ -21,13 +22,13 @@ public class PersonalInfoActivity extends AppCompatActivity {
        //String email = intent.getStringExtra("emailAddress");
         //String password = intent.getStringExtra("password");
         //String confirmPassword = intent.getStringExtra("confirmPassword");
-        Button nextButtonBtn = findViewById(R.id.nextbutton_btn);
+        Button nextButtonBtn = findViewById(R.id.next_btn);
         nextButtonBtn.setOnClickListener(view -> {
-            EditText userNameTxt = findViewById(R.id.username_txt);
+            EditText userNameTxt = findViewById(R.id.user_name_txt);
             String userName = userNameTxt.getText().toString();
-            EditText firstNameTxt = findViewById(R.id.firstname_txt);
+            EditText firstNameTxt = findViewById(R.id.first_name_txt);
             String firstName = firstNameTxt.getText().toString();
-            EditText lastNameTxt = findViewById(R.id.lastname_txt);
+            EditText lastNameTxt = findViewById(R.id.last_name_txt);
             String lastName = lastNameTxt.getText().toString();
           //  Toast.makeText(this, email + " " + password + " " + confirmPassword + " " + userName + " " + firstName + " " +lastName, Toast.LENGTH_SHORT).show();
             // 6 components using put
@@ -42,7 +43,7 @@ public class PersonalInfoActivity extends AppCompatActivity {
             startActivity(personalInfoIntent);
         });
 
-        Button backBtn = findViewById(R.id.backbutton_btn);
+        Button backBtn = findViewById(R.id.back_btn);
         backBtn.setOnClickListener(view -> {
             finish();
         });

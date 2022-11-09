@@ -13,6 +13,7 @@ public class ProfessionalInfoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setTitle("Professional Info");
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
         // six components using get
@@ -25,11 +26,11 @@ public class ProfessionalInfoActivity extends AppCompatActivity {
         //String dateOfBirth = intent.getStringExtra("dateOfBirth");
         //String placeOfBirth = intent.getStringExtra("placeOfBirth");
         setContentView(R.layout.activity_professional_info);
-        Button doneBtn = findViewById(R.id.done_btn);
+        Button doneBtn = findViewById(R.id.next_btn);
         doneBtn.setOnClickListener(view -> {
             EditText currentCompanyTxt = findViewById(R.id.current_company_txt);
             String currentCompany = currentCompanyTxt.getText().toString();
-            EditText totalExpTxt = findViewById(R.id.totalexperience_txt);
+            EditText totalExpTxt = findViewById(R.id.total_experience_txt);
             String totalExp = totalExpTxt.getText().toString();
             EditText designationTxt = findViewById(R.id.designation_txt);
             String designation = designationTxt.getText().toString();

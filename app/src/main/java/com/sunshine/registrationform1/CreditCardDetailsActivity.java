@@ -13,12 +13,13 @@ public class CreditCardDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credit_card_details);
+        getSupportActionBar().setTitle("Credit Card Details");
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
 
-        Button ccNextBtn = findViewById(R.id.ccnext_btn);
+        Button ccNextBtn = findViewById(R.id.next_btn);
         ccNextBtn.setOnClickListener(view -> {
-            EditText cardNoTxt = findViewById(R.id.card_txt);
+            EditText cardNoTxt = findViewById(R.id.card_number_txt);
             String cardNo = cardNoTxt.getText().toString();
             EditText cardHolderTxt = findViewById(R.id.card_holder_txt);
             String cardHolder = cardHolderTxt.getText().toString();
@@ -35,7 +36,7 @@ public class CreditCardDetailsActivity extends AppCompatActivity {
             startActivity(creditCardAccount);
         });
 
-        Button ccBackbtn = findViewById(R.id.ccback_btn);
+        Button ccBackbtn = findViewById(R.id.back_btn);
         ccBackbtn.setOnClickListener(view -> {
             finish();
         });
